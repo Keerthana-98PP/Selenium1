@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="keerthanaAutomation.TestComponents.Listeners"/>
+  </listeners>
+  <test thread-count="5" parallel="tests" name="StandAloNeTest(failed)">
+    <classes>
+      <class name="keerthanaAutomation.StandAloneTest">
+        <methods>
+          <include name="placeOrder"/>
+          <include name="LaunchApplication"/>
+          <include name="orderDisplayed" invocation-numbers="1"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- keerthanaAutomation.StandAloneTest -->
+    </classes>
+  </test> <!-- StandAloNeTest(failed) -->
+</suite> <!-- Failed suite [Suite] -->
