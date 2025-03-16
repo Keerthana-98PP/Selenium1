@@ -19,6 +19,7 @@ public class AbstractComponents {
 		PageFactory.initElements(driver, this);
 		
 	}
+    //pagefactory
 	
 	@FindBy(xpath="//button[@routerlink='/dashboard/cart']")
 	WebElement cartIcon;
